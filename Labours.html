@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products || Dream Build</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+            <div class="Navbar">
+                <div class="Logo">
+                    <img src="Images/logo_main.png" width="125px" alt="Logo of Dream Build">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="Dream.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="Designers.html">Design</a></li>
+                        <li><a href="Labours.html">Labours</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li> 
+                    </ul>
+                </nav>
+                <img src="Images/cart.png" width="40px" height="40px" alt="Cart Icon">
+                <img src="Images/menu.png" alt="Menu Icon" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!----------------- Labours Section -------------------->
+    <section class="labours-section">
+        <h2 class="labours-title">Our Skilled Labour Providers</h2>
+        <div class="labours-row">
+    
+            <!-- Labour Provider 1 -->
+            <div class="labour-card">
+                <img src="Images/labour1.jpeg" alt="Labour Provider 1">
+                <div class="labour-content">
+                    <h3>Rajesh Construction Works</h3>
+                    <p><strong>Location:</strong> Mumbai, Maharashtra<br>
+                    <strong>Manpower:</strong> 250+ Skilled & Unskilled Labour<br>
+                    Provides experienced masons, electricians, and plumbers for large-scale commercial and residential projects.</p>
+                    <button class="labour-contact-btn">Contact</button>
+                </div>
+            </div>
+    
+            <!-- Labour Provider 2 -->
+            <div class="labour-card">
+                <img src="Images/labour2.jpeg" alt="Labour Provider 2">
+                <div class="labour-content">
+                    <h3>Sharma Labour Services</h3>
+                    <p><strong>Location:</strong> Delhi NCR<br>
+                    <strong>Manpower:</strong> 180+ Certified Labourers<br>
+                    Specializes in providing trained workers for high-rise building projects, including carpenters, welders, and painters.</p>
+                    <button class="labour-contact-btn">Contact</button>
+                </div>
+            </div>
+    
+            <!-- Labour Provider 3 -->
+            <div class="labour-card">
+                <img src="Images/labour3.jpeg" alt="Labour Provider 3">
+                <div class="labour-content">
+                    <h3>Kumar Workforce Solutions</h3>
+                    <p><strong>Location:</strong> Bengaluru, Karnataka<br>
+                    <strong>Manpower:</strong> 300+ Workers Available<br>
+                    Supplies construction workers for both urban and rural projects, ensuring compliance with safety protocols.</p>
+                    <button class="labour-contact-btn">Contact</button>
+                </div>
+            </div>
+    
+            <!-- Labour Provider 4 -->
+            <div class="labour-card">
+                <img src="Images/labour4.jpeg" alt="Labour Provider 4">
+                <div class="labour-content">
+                    <h3>Singh Labour Agency</h3>
+                    <p><strong>Location:</strong> Chandigarh, Punjab<br>
+                    <strong>Manpower:</strong> 150+ Skilled Labour<br>
+                    Focuses on providing manpower for interior design, finishing works, and landscaping projects.</p>
+                    <button class="labour-contact-btn">Contact</button>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- Pagination Buttons -->
+        <div class="page-btn-1">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </section>
+    
+    <!----------------- Footer Section -------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download App</h3>
+                    <p>Download App for Android and iOS mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="Images/playStore.jpeg" alt="Play Store Logo">
+                        <img src="Images/AppStore.png" alt="App Store Logo">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Images/logo_main.png" alt="App Logo">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits Of Construction Accessible to the Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Twitter (X)</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Copyright">
+                <marquee behavior="scroll" direction="left">
+                    <p>Copyright 2025 - VIIT Pune</p>
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <!----------------- JS for Menu Toggle -------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
